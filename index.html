@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form id="form">
+        <div id="form_container">
+            <label for="On_Road_Price">On Road Price</label>
+            <input type="number" name="On_Road_Price" id="On_Road_Price">
+            <hr>
+            <label for="Down_Payment">Down Payment</label>
+            <input type="number" name="Down_Payment" id="Down_Payment">
+            <hr>
+            <h5>Disbursed Loan Amount</h5>
+            <div id="Disbursed_Loan_Amount"></div>
+            <hr>
+            <label for="HP">HP</label>
+            <input type="number" name="HP" id="HP" value="750">
+            <hr>
+            <label for="DC">DC</label>
+            <input type="number" name="DC" id="DC">
+            <hr>
+            <label for="PayOut">Pay Out</label>
+            <input type="number" name="PayOut" id="PayOut" value="2649">
+            <hr>
+            <label for="gross_sell">Gross Sell</label>
+            <input type="number" name="gross_sell" id="gross_sell" value="1999">
+            <hr>
+            <label for="Charges">Charges</label>
+            <input type="number" name="Charges" id="Charges" value="1200">
+            <hr>
+            <label for="Tenure">Tenure</label>
+            <input type="number" name="Tenure" id="Tenure">
+            <hr>
+            <button id="button">Calculate</button>
+        </div>
+    </form>
+    <div id="EMI_Container">
+        <h5>EMI</h5>
+        <div id="emi"></div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
