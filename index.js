@@ -11,11 +11,11 @@ const PayOut = document.getElementById("PayOut");
 const Tenure = document.getElementById("Tenure");
 const EMI = document.getElementById("emi");
 
-// Down_Payment.addEventListener("blur", ()=>{
-//     Disbursed_Loan_Amount.textContent = On_Road_Price.value - Down_Payment.value;
-// })
 
-let Amount = 0;
+let x = prompt("enter pin");
+
+if(x == 321){
+    let Amount = 0;
 
 Form.addEventListener("change", ()=>{
     console.log("changes done");
@@ -34,5 +34,15 @@ Form.addEventListener("submit", (e)=>{
      EMI.style.backgroundColor = "lightGreen";
      EMI.style.color = "red";
 });
+
+}else{
+    alert("please enter correct pin");
+}
+
+// Down_Payment.addEventListener("blur", ()=>{
+//     Disbursed_Loan_Amount.textContent = On_Road_Price.value - Down_Payment.value;
+// })
+
+
 
 
